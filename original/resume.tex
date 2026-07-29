@@ -1,0 +1,189 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \usepackage{longtable}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {Amardeep Saha}}\\
+    \vspace*{2pt}
+    
+    \vspace*{2pt}
+    \href{mailto:amardeepsaha13@gmail.com}{amardeepsaha13@gmail.com} | \href{tel:+91 8102374221}{+91 8102374221}\\
+    \vspace*{2pt}
+    \textbf{\href{https://leetcode.com/u/amardeepsaha13/}{LeetCode | }}\textbf{\href{https://github.com/alpha-coder13/}{GitHub | }}\textbf{\href{https://www.linkedin.com/in/alpha-coder13/}{Linkedin | }}\textbf{\href{https://alpha-coder13.github.io/MyPortfolio/}{Portfolio}}\\
+  \end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Education}
+      \vspace{2mm}
+      \textbf{Indian Institute of Information Technology , Ranchi}\hfill Ranchi, India\\
+Computer Science and Engineering B.Tech. \hfill July 2019 - May 2023\\
+{\sl CGPA: 8.45}\\
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Experience
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Experience}
+      \vspace{2mm}
+
+      \textbf{Indiamart}\textbf{ | Full-Stack Developer} \hfill Noida, India | June 2023 - Present\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Architected and implemented a high-performance concurrent caching layer in Golang leveraging in-memory storage and Redis, reducing database calls by 90\%+ and achieving \textasciitilde{}1ms p95 latency with a 3-second warm-up and near-zero-latency steady-state reads.
+\item  Led end-to-end full-stack performance optimization initiatives by reviewing 5+ service SRS documents, identifying lightweight backend API strategies, and transforming sequential service interactions into asynchronous workflows, resulting in a 25\% reduction in overall page load time.
+\item  Designed and developed a Kafka-driven location validation and enrichment pipeline in Golang with PostgreSQL, detecting location mismatches exceeding 250 km and triggering asynchronous WhatsApp-based remediation workflows to improve data accuracy and automation.
+\item  Implemented Server-Side Rendering (SSR) using React and Node.js to enhance SEO, improve search engine indexability, and drive a 5\% increase in organic traffic.
+\item  Engineered scalable, data-intensive frontend architectures capable of handling 200+ concurrent asynchronous requests per component while maintaining UI responsiveness, stability, and performance under high load.
+\item  Owned and optimized automated data enrichment workflows for mobile user enquiries, increasing valid form fill rates by 10\% through intelligent extraction and enrichment strategies.
+\item  Architected a unified JavaScript versioning and deployment framework that eliminated cross-team release dependencies and streamlined the rollout of centralized shared components.
+\item  Designed and delivered a reusable UI component library comprising 20+ standardized components, improving design consistency and accelerating feature development across multiple projects.
+\item  Collaborated proactively with cross-functional product, backend, and platform teams to drive rapid iteration cycles, continuous improvements, and efficient delivery of high-impact features.
+\item  Spearheaded the implementation of Googles one-click unsubscribe compliance feature for promotional emails, coordinating execution across multiple teams to ensure seamless adoption and regulatory alignment.
+\item  Integrated a sentiment analysis capability using HuggingFaces multilingual BERT model to evaluate user tone and intent, enabling smarter downstream processing and enhanced user interaction analysis.
+\end{itemize}
+      \textbf{CoantumLeap}\textbf{ | Reasearch and Development Intern} \hfill Remote, India | March 2022 - August 2022\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Engineered a full-stack DAO application to manage over 10,000 members and transactions.
+\item  Optimized gas-efficient smart contracts in Solidity for token sharing and stake distribution logic.
+\item  Implemented frontend-to-blockchain connectivity using Ethers.js and MetaMask.
+\item  Deployed smart contracts to the Ethereum blockchain with Remix IDE.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Skills}
+  \vspace{2mm}
+  \begin{longtable}{p{4cm}p{12cm}}
+  Programming Languages: & JavaScript, HTML, PHP, C, C++, Bash, TypeScript, Solidity, Python, Golang, SQL \\
+  Libraries/Frameworks: & React, Node, Express, BootStrap, Tailwind, Webpack, Next, Yii2, REST API, Redux, Ethers, Pandas, Babel, Jest, Next, Apache Kafka, Gin \\
+  Tools / Platforms: & Git, VS Code, Nano, Remix, Ethereum, Docker, Devtron \\
+  Databases: & MongoDB, SQL, PostgreSQL, Redis \\
+  \end{longtable}
+  \vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Projects / Open-Source}
+      \vspace{2mm}
+      {\textbf{Video Conferencing App}}\textbf{ | \href{https://github.com/alpha-coder13/vc}{Link}}\hfill{\sl React JS, WebRTC , SocketIO, SQL , NodeJS, Redis, Docker}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Engineered a full-stack, real-time video conferencing application .
+\item  Implemented peer-to-peer audio/video streaming with WebRTC and established real-time signaling and chat functionality using Socket.IO.
+\item  Developed a secure backend featuring JWT-based authentication and a robust room management system, paired with a modern, responsive UI built with Tailwind CSS.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Voice-Enabled Task Tracke}}\textbf{ | \href{https://github.com/alpha-coder13/kanban-dashboard}{Link}}\hfill{\sl Next.js, TypeScript, Node.js, Express, SQLite, LLMs, Docker}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Built a backend-driven task management system with REST APIs supporting CRUD, filtering, and search, using Node.js, Express, and SQLite with clear service separation.
+\item  Designed an LLM-powered natural language processing pipeline using Groq SDK, converting voice input into structured task data (title, priority, due date, status).
+\item  Integrated speech-to-text ingestion with backend services and a Next.js frontend, enabling real-time voice-based task creation and Kanban workflows.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Research Paper \textquotedbl{} A Survey Paper on Developments in Blockchain\textquotedbl{}}}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Authored and published an accepted research paper, \textquotedbl{}A Survey Paper on Developments in Blockchain,\textquotedbl{} at IIIT Ranchi.
+\item  Conducted a comprehensive literature review, analyzing over 25 research papers to evaluate the evolution of blockchain consensus mechanisms.
+\end{itemize}
+          \vspace*{3mm}
+
+
+
+
+
+    \ 
+    \end{document}
