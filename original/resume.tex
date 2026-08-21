@@ -1,3 +1,36 @@
+\documentclass[8pt,a4paper]{extarticle}
+
+% ---------- ATS-SAFE SETUP ----------
+% No tables, no columns, no icons, no graphics, no text boxes.
+% Plain text extracts cleanly top-to-bottom for any parser.
+
+\usepackage[left=0.65in,right=0.65in,top=0.25in,bottom=0.25in]{geometry}
+\usepackage{cmap}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\setlength{\parskip}{2pt}
+
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+
+% Section headings: small caps, bold, rule underneath
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{-4pt}\hrule\vspace{2pt}]
+\titlespacing{\section}{0pt}{5pt}{2pt}
+
+% Tight bullet lists
+\setlist[itemize]{leftmargin=16pt, topsep=0pt, itemsep=0pt, parsep=0pt}
+
+% Header line: Title/Company left, location right, on one line
+\newcommand{\role}[2]{%
+  \noindent\textbf{#1} \hfill #2\\[1pt]
+}
+
 \begin{document}
 
 % ---------- HEADER ----------
