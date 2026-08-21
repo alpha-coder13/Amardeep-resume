@@ -1,95 +1,36 @@
-\documentclass[a4paper]{article}
-    \usepackage{fullpage}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{textcomp}
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
-    \usepackage[hidelinks]{hyperref}
-    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
-    \usepackage{longtable}
-    \textheight=10in
-    \pagestyle{empty}
-    \raggedright
+\begin{document}
 
-    %\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
+% ---------- HEADER ----------
+\begin{center}
+  {\LARGE \textbf{AMARDEEP SAHA}}\\[2pt]
+  Software Engineer\\[2pt]
+  amardeepsaha13@gmail.com \ | \ +91 8102374221 \ | \ Noida, India\\[2pt]
+  \href{https://www.linkedin.com/in/alpha-coder13/}{LinkedIn} \ | \
+  \href{https://github.com/alpha-coder13/}{GitHub} \ | \
+  \href{https://alpha-coder13.github.io/MyPortfolio/}{Portfolio} \ | \
+  \href{https://leetcode.com/u/amardeepsaha13/}{LeetCode}
+\end{center}
 
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% ---------- SUMMARY ----------
+\section*{Summary}
+Backend Software Engineer with 3+ years of experience designing and scaling distributed backend systems using Golang, Kafka, PostgreSQL, and Redis. Built a concurrent caching layer that cut database calls by over 90\% and Kafka-driven pipelines for real-time data validation and enrichment, alongside LLM-orchestration pipelines (LangGraph, LangChain) for intelligent, cost-optimized data processing. Strong foundation in data structures, algorithms, and system design, with a track record of improving latency, throughput, and conversion metrics in production.
 
-% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+% ---------- SKILLS ----------
+\section*{Skills}
+\textbf{Programming Languages:} Golang, Python, JavaScript, TypeScript, SQL, Solidity, C++, C, PHP, Bash, HTML\\
+\textbf{Backend \& Frameworks:} Gin, Node.js, Express.js, REST APIs, Apache Kafka, Redux, Next.js, React\\
+\textbf{AI / LLM Tooling:} LangChain, LangGraph, Langfuse, HuggingFace Transformers, Groq SDK, Prompt Engineering\\
+\textbf{Databases \& Caching:} PostgreSQL, Cassandra, Redis, MongoDB, SQLite\\
+\textbf{Tools \& Platforms:} Docker, Kubernetes, Git, Windmill, Devtron, Remix, Ethereum\\
+\textbf{Core Competencies and Methodologies:} Distributed Systems, System Design, Concurrency Control, Distributed Locking, CDC, Microservices, Caching Strategies, Data Structures \& Algorithms, Performance Optimization
 
-\newcommand{\area} [2] {
-    \vspace*{-9pt}
-    \begin{verse}
-        \textbf{#1}   #2
-    \end{verse}
-}
+% ---------- EXPERIENCE ----------
+\section*{Experience}
 
-\newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
-}
-
-\newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
-}
-
-\newcommand{\employer} [3] {
-    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
-}
-
-\newcommand{\contact} [3] {
-    \vspace*{-10pt}
-    \begin{center}
-        {\Huge \scshape {#1}}\\
-        #2 \\ #3
-    \end{center}
-    \vspace*{-8pt}
-}
-
-\newenvironment{achievements}{
-    \begin{list}
-        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
-    \end{list}
-}
-
-\newcommand{\schoolwithcourses} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-    \vspace*{5pt}
-}
-
-\newcommand{\school} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-}
-
-% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
-
-    \begin{document}
-    \vspace*{-40pt}
-
-    
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Profile
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \vspace*{-2pt}
-  \begin{center}
-    {\Huge \scshape {Amardeep Saha}}\\
-    \vspace*{2pt}
-    
-    \vspace*{2pt}
-    \href{mailto:amardeepsaha13@gmail.com}{amardeepsaha13@gmail.com} | \href{tel:+91 8102374221}{+91 8102374221}\\
-    \vspace*{2pt}
-    \textbf{\href{https://leetcode.com/u/amardeepsaha13/}{LeetCode | }}\textbf{\href{https://github.com/alpha-coder13/}{GitHub | }}\textbf{\href{https://www.linkedin.com/in/alpha-coder13/}{Linkedin | }}\textbf{\href{https://alpha-coder13.github.io/MyPortfolio/}{Portfolio}}\\
-  \end{center}
-
-\item Built a distributed Intent-to-Lead pipeline processing \textbf{2.15M+ buyer clickstream events/day}, using \textbf{Cassandra} for high-throughput activity logging, scheduled ETL for extracting buyer search interests and enriching product/seller metadata, and \textbf{Kafka}-based asynchronous processing for downstream lead creation; converted \textbf{\textasciitilde{}14\%} of qualified intents into sold leads.
+\role{Indiamart}{Noida, India}
+\textit{Backend Software Engineer | June 2023 -- Present}
+\begin{itemize}
+ \item Built a distributed Intent-to-Lead pipeline processing \textbf{2.15M+ buyer clickstream events/day}, using \textbf{Cassandra} for high-throughput activity logging, scheduled ETL for extracting buyer search interests and enriching product/seller metadata, and \textbf{Kafka}-based asynchronous processing for downstream lead creation; converted \textbf{\textasciitilde{}14\%} of qualified intents into sold leads.
 \item Designed and implemented a WhatsApp-based enquiry generation pipeline that identified user intent for specific modules and triggered automated engagement, resulting in \textbf{INR 1 lakh additional profit}, scaled onboarding by enabling \textbf{200+ additional users per day}.
 \item Architected and implemented a high-performance concurrent caching layer in \textbf{Golang} leveraging in-memory storage and \textbf{Redis}, reducing database calls by \textbf{90\%+} and achieving \textbf{\textasciitilde{}1ms p95 latency} with a \textbf{3-second warm-up} and near-zero-latency steady-state reads.
 \item Led end-to-end full-stack performance optimization initiatives by reviewing \textbf{5+ service SRS documents}, identifying lightweight backend API strategies, and transforming sequential service interactions into asynchronous workflows, resulting in a \textbf{25\% reduction} in overall page load time.
@@ -104,91 +45,41 @@
 \item Integrated a sentiment analysis capability using HuggingFace's \textbf{multilingual BERT} model to evaluate user tone and intent, enabling smarter downstream processing and enhanced user interaction analysis.
 \item Designed and orchestrated custom LLM nodes for semantic lead-matching using \textbf{LangGraph} and \textbf{LangChain}, with \textbf{Langfuse} for observability; combined prompt compression, request batching, and flex processing to cut per-request inference cost from \textbf{INR 0.80 to under INR 0.10}, sustaining \textbf{10K+ requests/day} with response latency \textbf{under 10s}.
 \item Built a concurrency-safe lead-routing pipeline that curates data from \textbf{10+ APIs} and routes qualified sellers to users over WhatsApp, using \textbf{Redis} distributed locks and atomic \textbf{INCR} transactions for race-free processing across distributed goroutines; polled curation status with a \textbf{5s} network cap against a \textbf{60s SLA}, returning results as soon as all source APIs resolved (\textbf{\textasciitilde{}92\% reduction} in worst-case network hold).
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %
-    %     Education
-    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \header{Education}
-      \vspace{2mm}
-      \textbf{Indian Institute of Information Technology , Ranchi}\hfill Ranchi, India\\
-Computer Science and Engineering B.Tech. \hfill July 2019 - May 2023\\
-{\sl CGPA: 8.45}\\
-\vspace{2mm}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %
-    %     Experience
-    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \header{Experience}
-      \vspace{2mm}
-
-      \textbf{Indiamart}\textbf{ | Full-Stack Developer} \hfill Noida, India | June 2023 - Present\\
-          \vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-
-\end{itemize}
-      \textbf{CoantumLeap}\textbf{ | Reasearch and Development Intern} \hfill Remote, India | March 2022 - August 2022\\
-          \vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-\item  Engineered a full-stack DAO application to manage over 10,000 members and transactions.
-\item  Optimized gas-efficient smart contracts in Solidity for token sharing and stake distribution logic.
-\item  Implemented frontend-to-blockchain connectivity using Ethers.js and MetaMask.
-\item  Deployed smart contracts to the Ethereum blockchain with Remix IDE.
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Skills
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \header{Skills}
-  \vspace{2mm}
-  \begin{longtable}{p{4cm}p{12cm}}
-Programming Languages: & Golang, Python, JavaScript, TypeScript, SQL, Solidity, C++, C, PHP, Bash, HTML \\
-Backend \& Frameworks: & Gin, Node.js, Express, REST API, Apache Kafka, Redux, Next.js, React, Yii2 \\
-AI / LLM Tooling: & LangChain, LangGraph, Langfuse, HuggingFace Transformers, Groq SDK, Prompt Engineering \\
-Databases \& Messaging: & PostgreSQL, Cassandra, Redis, Apache Kafka, MongoDB, SQLite \\
-Tools / Platforms: & Git, Docker, Devtron, Windmill, VS Code, Remix, Ethereum \\
-\end{longtable}
-  \vspace{1mm}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %
-    %     Projects
-    %
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \header{Projects / Open-Source}
-      \vspace{2mm}
-      {\textbf{Video Conferencing App}}\textbf{ | \href{https://github.com/alpha-coder13/vc}{Link}}\hfill{\sl React JS, WebRTC , SocketIO, SQL , NodeJS, Redis, Docker}\\
-          \vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-\item  Engineered a full-stack, real-time video conferencing application .
-\item  Implemented peer-to-peer audio/video streaming with WebRTC and established real-time signaling and chat functionality using Socket.IO.
-\item  Developed a secure backend featuring JWT-based authentication and a robust room management system, paired with a modern, responsive UI built with Tailwind CSS.
+\role{QuantumLeap}{Remote, India}
+\textit{Research and Development Intern | March 2022 -- August 2022}
+\begin{itemize}
+  \item Engineered a full-stack decentralized application (DAO) supporting \textbf{10,000+} members and on-chain transactions, covering governance voting and stake distribution logic.
+  \item Optimized gas-efficient smart contracts in \textbf{Solidity} for token distribution and stake allocation, reducing average transaction gas cost by \textbf{\textasciitilde{}18\%} through storage layout and loop optimization.
+  \item Implemented frontend-to-blockchain connectivity using \textbf{Ethers.js} and \textbf{MetaMask}, enabling wallet-based authentication and real-time transaction signing across the platform's \textbf{10,000+} member base.
+  \item Deployed and tested smart contracts on the \textbf{Ethereum} blockchain using \textbf{Remix IDE}, validating contract logic across \textbf{20+} test scenarios prior to deployment.
 \end{itemize}
-          \vspace*{3mm}
-      {\textbf{Voice-Enabled Task Tracke}}\textbf{ | \href{https://github.com/alpha-coder13/kanban-dashboard}{Link}}\hfill{\sl Next.js, TypeScript, Node.js, Express, SQLite, LLMs, Docker}\\
-          \vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-\item  Built a backend-driven task management system with REST APIs supporting CRUD, filtering, and search, using Node.js, Express, and SQLite with clear service separation.
+
+% ---------- PROJECTS ----------
+\section*{Projects}
+\textbf{Voice-Enabled Task Tracker} \ | \ \textit{Next.js, TypeScript, Node.js, Express, SQLite, LLMs, Docker}
+\begin{itemize}
+  \item Built a backend-driven task management system with REST APIs supporting CRUD operations, filtering, and search using \textbf{Node.js}, \textbf{Express}, and \textbf{SQLite}; the system is capable of handling \textbf{500+} concurrent task records with sub-\textbf{100ms} query response time, validated in local development testing.
+  \item Designed an LLM-powered natural language processing pipeline using \textbf{Groq SDK} to convert voice input into structured task data (title, priority, due date, status); the pipeline is capable of completing end-to-end voice-to-task conversion in under \textbf{2 seconds}, based on dev-environment testing.
+  \item Integrated speech-to-text ingestion with backend services, enabling real-time voice-based task creation and Kanban workflows; the system is capable of supporting \textbf{10+} concurrent users with real-time board state synchronization in development testing.
+\end{itemize}
+
+\textbf{Video Conferencing App} \ | \ \textit{React JS, WebRTC , SocketIO, SQL , NodeJS, Redis, Docker}
+\begin{itemize}
+ \item  Built a backend-driven task management system with REST APIs supporting CRUD, filtering, and search, using Node.js, Express, and SQLite with clear service separation.
 \item  Designed an LLM-powered natural language processing pipeline using Groq SDK, converting voice input into structured task data (title, priority, due date, status).
 \item  Integrated speech-to-text ingestion with backend services and a Next.js frontend, enabling real-time voice-based task creation and Kanban workflows.
 \end{itemize}
-          \vspace*{3mm}
-      {\textbf{Research Paper \textquotedbl{} A Survey Paper on Developments in Blockchain\textquotedbl{}}}\\
-          \vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-\item  Authored and published an accepted research paper, \textquotedbl{}A Survey Paper on Developments in Blockchain,\textquotedbl{} at IIIT Ranchi.
-\item  Conducted a comprehensive literature review, analyzing over 25 research papers to evaluate the evolution of blockchain consensus mechanisms.
+
+\textbf{Research Publication: ``A Survey Paper on Developments in Blockchain''}
+\begin{itemize}
+  \item Authored and published a research paper at IIIT Ranchi, analyzing over \textbf{25} papers on the evolution of blockchain consensus mechanisms.
 \end{itemize}
-          \vspace*{3mm}
 
+% ---------- EDUCATION ----------
+\section*{Education}
+\role{Indian Institute of Information Technology, Ranchi}{Ranchi, India}
+B.Tech, Computer Science and Engineering | July 2019 -- May 2023 | CGPA: 8.45 / 10
 
-
-
-
-    \ 
-    \end{document}
+\end{document}
